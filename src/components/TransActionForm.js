@@ -3,7 +3,7 @@ import { useState } from "react/cjs/react.development";
 const TransActionForm = ({addTransaction, setIsShow}) => {
     const [formValues, setFormValues] = useState({
         type: "expense",
-        amount: 0,
+        amount: "",
         desc: "",
     });
     const changeHandler = (e) => {
